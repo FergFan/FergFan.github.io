@@ -1,0 +1,31 @@
+@media only screen and (device-width: 1280px),
+only screen and (max-width:1280px) {
+.css-element {
+yourcsscode:;
+}
+   }
+		 
+section{
+	text-align: center;
+}
+
+ul
+{
+    list-style-type:none;
+}
+
+h1{
+	color: red;
+}
+
+body{
+	font-family: "Comic Sans MS";
+	background-size: 100%;
+	color: white;
+	background-color: black;
+	cursor:url(https://i.imgur.com/RWPxwjt.png), auto;
+}
+
+a{
+	color: red;
+}
