@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="staticrypt-html">
+<head>
+    <meta charset="utf-8">
+    <title>Chamber Room 11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- do not cache this page -->
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+	
+	<link rel="stylesheet" href="crypto.css">
+</head>
+
+<body class="staticrypt-body">
+	<audio controls autoplay loop>
+		<source src="music/hpotter.mp3" type="audio/mpeg">
+	</audio>
+	
+	
+<div class="staticrypt-page">
+    <div class="staticrypt-form">
+        <div class="staticrypt-instructions">
+            <p class="staticrypt-title">Chamber of Banana...</p>
+        </div>
+
+        <hr class="staticrypt-hr">
+
+        <form id="staticrypt-form" action="#" method="post">
+            <input id="staticrypt-password"
+                   type="password"
+                   name="password"
+                   placeholder="enter your wrong guess here"
+                   autofocus/>
+
+            <input type="submit" class="staticrypt-decrypt-button" value="GUESS"/>
+        </form>
+    </div>
+
+</div>
+
+<script src="algo.js"></script>
+
+<script>
+
+	var count = 0;
+    document.getElementById('staticrypt-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+		
+		var pass = '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';
+		var passphrase = document.getElementById('staticrypt-password').value,
+            encryptedMsg = pass,
+            encryptedHMAC = encryptedMsg.substring(0, 64),
+            encryptedHTML = encryptedMsg.substring(64),
+            decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+		if (count<5){
+			if (decryptedHMAC !== encryptedHMAC) {
+				count++;
+				alert('Wrong guess idiot!');
+				return;
+			}
+		} else{
+			window.location.href = "chamberofsecrets.html";
+		}
+        
+
+        var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+
+        document.write(plainHTML);
+        document.close();
+    });
+</script>
+
+</body>
+</html>
