@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<HEAD>
+<base href="https://fergfan.github.io/">
+<link rel="stylesheet" href="chStyles.css">
+
+<style>
+	.blinking{
+		animation:blinkingText 0.8s infinite;
+	}
+
+	@keyframes blinkingText{
+		0%{		color: red;	}
+		49%{	color: red;	}
+		50%{	color: red;	}
+		99%{	color:transparent;	}
+		100%{	color: red;	}
+	}
+	
+	h1{
+		color:red;
+	}
+</style>
+</HEAD>
+
+<body>
+	<audio controls autoplay loop>
+		<source src="music/sugarrman.mp3" type="audio/mpeg">
+	</audio>
+
+	<br>
+	<br>
+	<section>
+		<h1 class="blinking">JOIN THE SUGARMAN BOOTCAMP</h1>
+		<h1 class="blinking">ONLY 9.99!*</h1>
+		<br><br>
+
+		<marquee behavior="scroll" direction="left">
+
+			<img src="images/sugarman7.jpg" height="300" width="200">
+			<img src="images/sugarman3.png" height="300" width="200">
+			<img src="images/sugarman4.png" height="300" width="200">
+			<img src="images/sugarman5.jpg" height="300" width="200">
+			<img src="images/sugarman6.jpg" height="300" width="200">
+			<img src="images/sugarman1.png" height="300" width="200">
+			<img src="images/sugarman2.png" height="300" width="200">
+		</marquee>
+		
+		<br><br>
+		<h1 class="blinking">BECOME A SUGARMAN TODAY!!!</h1>
+		<h1 class="blinking">ONLY 9.99!*</h1>
+		<p class="blinking">For only 2000 easy payments of 9.99!*</p>
+</body>
+
+</html>
