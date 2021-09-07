@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Form Spree Example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container text-center">
+      <h2 class="py-5">Simple Form Example</h2>
+
+      <div class="container py-5" style="background-color: #e1e6ee">
+        <div class="container col-4"></div>
+        <div class="container col-4 text-center">
+          <form
+            action="https://formspree.io/nhia.programming@gmail.com"
+            method="POST"
+          >
+            <div class="py-2">
+              <label for="name">Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                name="user_name"
+              />
+            </div>
+
+            <div class="py-2">
+              <label for="mail">E-mail:</label>
+              <input
+                class="form-control"
+                type="email"
+                id="mail"
+                name="user_mail"
+              />
+            </div>
+
+            <div class="py-2 text-center">
+              <label for="msg">Message:</label>
+              <textarea
+                class="form-control"
+                id="msg"
+                name="user_message"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+
+            <div class="py-5">
+              <button type="submit" class="btn btn-primary">
+                Send your message
+              </button>
+            </div>
+
+            <!-- 
+        After submission, these actions are embedded as hidden responses, via:
+         - _next: Allows you to define which page the user will be redirected to after submitting the form
+         - _subject: Defines the subject line to appear in the emails received
+         - _cc: All emails be sent to your email address and the additional email address specified 
+        -->
+            <input type="hidden" name="_next" value="/thank-you" />
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New submission from contact form"
+            />
+
+            <input type="hidden" name="_cc" value="another-email@email.com" />
+          </form>
+        </div>
+        <div class="container col-4"></div>
+      </div>
+    </div>
+  </body>
+</html>
